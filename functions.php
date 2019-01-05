@@ -1,10 +1,10 @@
 <?php
 /**
- * SETUP-HEADSTART
+ * MODEL-DAB
  *
- * This file adds functions to the Genesis Theme SETUP-HEADSTART.
+ * This file adds functions to the Genesis Theme MODEL-DAB.
  *
- * @package SETUP-HEADSTART
+ * @package MODEL-DAB
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://www.studiopress.com/
@@ -14,8 +14,8 @@
 require_once get_template_directory() . '/lib/init.php';
 
 // Defines the child theme (do not remove).
-define( 'CHILD_THEME_NAME', 'SETUP-HEADSTART' );
-define( 'CHILD_THEME_URL', 'https://setup-headstart.basestructure.com/' );
+define( 'CHILD_THEME_NAME', 'MODEL-DAB' );
+define( 'CHILD_THEME_URL', 'https://model-dab.basestructure.com/' );
 define( 'CHILD_THEME_VERSION', '2.7.2.1' );
 
 // Sets up the Theme.
@@ -71,7 +71,7 @@ function genesis_sample_enqueue_scripts_styles() {
 
 	wp_enqueue_style(
 		'genesis-sample-fonts',
-		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
+		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700|Crimson+Text:400,600,700',
 		array(),
 		CHILD_THEME_VERSION
 	);
@@ -129,70 +129,6 @@ add_theme_support(
 		'flex-width'  => true,
 	)
 );
-
-// Adds support for editor font sizes.
-add_theme_support( 'editor-font-sizes', array(
-	array(
-		'name'      => __( 'huge', 'setup-headstart' ),
-		'size'      => 128,
-		'slug'      => 'huge'
-	),
-	array(
-		'name'      => __( 'xxxlrg', 'setup-headstart' ),
-		'size'      => 96,
-		'slug'      => 'xxxlrg'
-	),
-	array(
-		'name'      => __( 'xxlrg', 'setup-headstart' ),
-		'size'      => 80,
-		'slug'      => 'xxlrg'
-	),
-	array(
-		'name'      => __( 'xlrg', 'setup-headstart' ),
-		'size'      => 64,
-		'slug'      => 'xlrg'
-	),
-	array(
-		'name'      => __( 'lrg', 'setup-headstart' ),
-		'size'      => 48,
-		'slug'      => 'lrg'
-	),
-	array(
-		'name'      => __( 'med', 'setup-headstart' ),
-		'size'      => 34,
-		'slug'      => 'med'
-	),
-	array(
-		'name'      => __( 'sml', 'setup-headstart' ),
-		'size'      => 24,
-		'slug'      => 'sml'
-	),
-	array(
-		'name'      => __( 'xsml', 'setup-headstart' ),
-		'size'      => 20,
-		'slug'      => 'xsml'
-	),
-	array(
-		'name'      => __( 'regular', 'setup-headstart' ),
-		'size'      => 18,
-		'slug'      => 'regular'
-	),
-	array(
-		'name'      => __( 'xxsml', 'setup-headstart' ),
-		'size'      => 16,
-		'slug'      => 'xxsml'
-	),
-	array(
-		'name'      => __( 'xxxsml', 'setup-headstart' ),
-		'size'      => 14,
-		'slug'      => 'xxxsml'
-	),
-	array(
-		'name'      => __( 'tiny', 'setup-headstart' ),
-		'size'      => 12,
-		'slug'      => 'tiny'
-	),
-) );
 
 // Renames primary and secondary navigation menus.
 add_theme_support(
